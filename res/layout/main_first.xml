@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty_cart_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg" >
+
+    <include
+        android:id="@+id/home_header"
+        layout="@layout/main_header" />
+
+    <ListView
+        android:id="@+id/first_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/home_header"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/image_null"
+        android:dividerHeight="5dp" >
+    </ListView>
+
+</RelativeLayout>

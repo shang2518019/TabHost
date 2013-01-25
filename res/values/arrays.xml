@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--主界面底部功能按键命名-->
+    <string-array name="title">
+        <item>资讯</item>
+        <item>问答</item>
+        <item>动弹</item>
+        <item>我的空间</item>
+        <item>更多</item>
+    </string-array>
+
+    <!--firstActivity_显示列表内容-->
+    <string-array name="firstActivity_list_title">
+        <item>重点污染源在线预警</item>
+        <item>实时数据</item>
+        <item>历史数据</item>
+    </string-array>
+    
+</resources>

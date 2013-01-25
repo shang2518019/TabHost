@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="3dip" >
+
+	<!--  ListRow Left sied Thumbnail image -->
+	<LinearLayout android:id="@+id/thumbnail" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"	
+        android:layout_alignParentLeft="true"
+        android:padding="2dp"
+	    android:layout_marginRight="10dip">
+
+	    
+		<ImageView     
+			android:id="@+id/item_image"   
+	        android:layout_width="40dip"
+	        android:layout_height="40dip"
+	        android:contentDescription="@string/app_name"
+	        android:src="@drawable/classification_1"/>
+        
+	</LinearLayout>
+
+	<ImageView
+	    android:id="@+id/imageView1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/thumbnail"
+	    android:layout_alignParentTop="true"
+	    android:layout_toRightOf="@+id/thumbnail"
+	    android:contentDescription="@string/app_name"
+	    android:src="@drawable/widget_bar_cut_off" />
+
+	<TextView
+	    android:id="@+id/item_name"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerVertical="true"
+	    android:layout_marginLeft="19dp"
+	    android:textSize="20dp"
+	    android:textColor="@color/black"
+	    android:layout_toRightOf="@+id/imageView1"
+	    />
+
+	<ImageView
+	    android:id="@+id/imageView2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_centerVertical="true"
+	    android:contentDescription="@string/app_name"
+	    android:layout_marginRight="10dp"
+	    android:src="@drawable/arrow" />
+
+</RelativeLayout>
