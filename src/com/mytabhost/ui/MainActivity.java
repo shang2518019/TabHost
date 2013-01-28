@@ -23,7 +23,7 @@ import android.widget.Toast;
 public class MainActivity extends TabActivity implements OnTouchListener,
 		OnGestureListener {
 
-	private static final int FLING_MIN_DISTANCE = 20;
+	private static final int FLING_MIN_DISTANCE = 35;
 	private static final int FLING_MIN_VELOCITY = 0;
 	private TabHost tabHost;
 	private String[] titles;

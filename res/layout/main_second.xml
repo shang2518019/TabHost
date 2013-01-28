@@ -2,9 +2,21 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/empty_cart_view"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent" 
-    android:background="#ffefebe7"> 
- <include layout="@layout/main_header"
-     android:id="@+id/category_header"/>
-</RelativeLayout>
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg" >
 
+    <include
+        android:id="@+id/category_header"
+        layout="@layout/main_header" />
+
+    <com.mytabhost.widget.PullDownView
+        android:id="@+id/pullDownView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/category_header" >
+
+    </com.mytabhost.widget.PullDownView>
+
+</RelativeLayout>
