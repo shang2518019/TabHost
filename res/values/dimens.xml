@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="pulldown_headerview_height">70dp</dimen>
+    <dimen name="pulldown_move_deviation">38dp</dimen>
+    <dimen name="pulldown_auto_incremental">6dp</dimen>
+
+</resources>

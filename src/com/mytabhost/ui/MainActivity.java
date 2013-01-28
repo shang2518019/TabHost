@@ -23,7 +23,7 @@ import android.widget.Toast;
 public class MainActivity extends TabActivity implements OnTouchListener,
 		OnGestureListener {
 
-	private static final int FLING_MIN_DISTANCE = 35;
+	private static final int FLING_MIN_DISTANCE = 100;
 	private static final int FLING_MIN_VELOCITY = 0;
 	private TabHost tabHost;
 	private String[] titles;
@@ -98,13 +98,15 @@ public class MainActivity extends TabActivity implements OnTouchListener,
 			Toast.makeText(this, "向左手势", Toast.LENGTH_SHORT).show();
 
 			index = current + 1 > total ? total - 1 : current + 1;
+			tabHost.setCurrentTab(index);
 		} else if (e2.getX() - e1.getX() > FLING_MIN_DISTANCE
 				&& Math.abs(velocityX) > FLING_MIN_VELOCITY) {
 			// Fling right
 			index = current - 1 < 0 ? 0 : current - 1;
 			Toast.makeText(this, "向右手势", Toast.LENGTH_SHORT).show();
+			tabHost.setCurrentTab(index);
 		}
-		tabHost.setCurrentTab(index);
+		
 		return false;
 	}
 
