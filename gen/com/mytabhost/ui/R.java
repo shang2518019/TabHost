@@ -17,11 +17,21 @@ public final class R {
         public static final int title=0x7f040000;
     }
     public static final class attr {
+        /** 控件名称
+         <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int value=0x7f010000;
     }
     public static final class color {
         public static final int black=0x7f050002;
         public static final int cacheColor=0x7f050003;
         public static final int light_gray=0x7f050001;
+        public static final int menuBG=0x7f050004;
         public static final int white=0x7f050000;
     }
     public static final class dimen {
@@ -33,74 +43,84 @@ public final class R {
         public static final int android_title_bg_progress=0x7f020000;
         public static final int arrow=0x7f020001;
         public static final int bg=0x7f020002;
-        public static final int classification_1=0x7f020003;
-        public static final int classification_2=0x7f020004;
-        public static final int classification_3=0x7f020005;
-        public static final int fifth_item_press=0x7f020006;
-        public static final int frame_logo_active=0x7f020007;
-        public static final int frame_logo_news=0x7f020008;
-        public static final int frame_logo_post=0x7f020009;
-        public static final int frame_logo_tweet=0x7f02000a;
-        public static final int home_btn_bg_s=0x7f02000b;
-        public static final int ic_action_search=0x7f02000c;
-        public static final int ic_arrow=0x7f02000d;
-        public static final int ic_launcher=0x7f02000e;
-        public static final int ic_more_item_default=0x7f02000f;
-        public static final int ic_more_item_pressed=0x7f020010;
-        public static final int image_null=0x7f020011;
-        public static final int invite_friends=0x7f020012;
-        public static final int list_item_gradient_bg=0x7f020013;
-        public static final int list_item_gradient_bg_press=0x7f020014;
-        public static final int list_selector=0x7f020015;
-        public static final int main_header_bg=0x7f020016;
-        public static final int main_navigation_action=0x7f020017;
-        public static final int main_navigation_answers=0x7f020018;
-        public static final int main_navigation_background=0x7f020019;
-        public static final int main_navigation_more=0x7f02001a;
-        public static final int main_navigation_myzone=0x7f02001b;
-        public static final int main_navigation_news=0x7f02001c;
-        public static final int myfollow=0x7f02001d;
-        public static final int mylike=0x7f02001e;
-        public static final int search_friends=0x7f02001f;
-        public static final int selector_tab_header_item_background=0x7f020020;
-        public static final int tabbar_cutline=0x7f020021;
-        public static final int widget_bar_cut_off=0x7f020022;
-        public static final int z_arrow_down=0x7f020023;
-        public static final int z_arrow_up=0x7f020024;
+        public static final int chechbox_selector=0x7f020003;
+        public static final int checkbox_selected=0x7f020004;
+        public static final int checkbox_unselected=0x7f020005;
+        public static final int classification_1=0x7f020006;
+        public static final int classification_2=0x7f020007;
+        public static final int classification_3=0x7f020008;
+        public static final int content_copy=0x7f020009;
+        public static final int content_delete=0x7f02000a;
+        public static final int contextmenu_collection=0x7f02000b;
+        public static final int fifth_item_press=0x7f02000c;
+        public static final int frame_logo_active=0x7f02000d;
+        public static final int frame_logo_news=0x7f02000e;
+        public static final int frame_logo_post=0x7f02000f;
+        public static final int frame_logo_tweet=0x7f020010;
+        public static final int home_btn_bg_s=0x7f020011;
+        public static final int ic_action_search=0x7f020012;
+        public static final int ic_arrow=0x7f020013;
+        public static final int ic_launcher=0x7f020014;
+        public static final int ic_more_item_default=0x7f020015;
+        public static final int ic_more_item_pressed=0x7f020016;
+        public static final int image_null=0x7f020017;
+        public static final int invite_friends=0x7f020018;
+        public static final int list_item_gradient_bg=0x7f020019;
+        public static final int list_item_gradient_bg_press=0x7f02001a;
+        public static final int list_selector=0x7f02001b;
+        public static final int main_header_bg=0x7f02001c;
+        public static final int main_navigation_action=0x7f02001d;
+        public static final int main_navigation_answers=0x7f02001e;
+        public static final int main_navigation_background=0x7f02001f;
+        public static final int main_navigation_more=0x7f020020;
+        public static final int main_navigation_myzone=0x7f020021;
+        public static final int main_navigation_news=0x7f020022;
+        public static final int myfollow=0x7f020023;
+        public static final int mylike=0x7f020024;
+        public static final int search_friends=0x7f020025;
+        public static final int selector_tab_header_item_background=0x7f020026;
+        public static final int tabbar_cutline=0x7f020027;
+        public static final int widget_bar_cut_off=0x7f020028;
+        public static final int z_arrow_down=0x7f020029;
+        public static final int z_arrow_up=0x7f02002a;
     }
     public static final class id {
-        public static final int MorePageTableLayout_Favorite=0x7f090009;
-        public static final int MorePageTableLayout_Follow=0x7f09000b;
-        public static final int buy_header=0x7f090011;
-        public static final int car_header=0x7f090017;
-        public static final int category_header=0x7f090015;
-        public static final int empty_cart_view=0x7f090007;
-        public static final int first_listView=0x7f090010;
-        public static final int home_header=0x7f09000f;
-        public static final int imageView1=0x7f090003;
-        public static final int imageView2=0x7f090005;
-        public static final int item_image=0x7f090002;
-        public static final int item_name=0x7f090004;
-        public static final int linew=0x7f090006;
-        public static final int more_header=0x7f090008;
-        public static final int more_page_row0=0x7f09000a;
-        public static final int more_page_row1=0x7f09000c;
-        public static final int more_page_row2=0x7f09000d;
-        public static final int more_page_row3=0x7f09000e;
-        public static final int progressImage=0x7f090012;
-        public static final int pullDownView1=0x7f090016;
-        public static final int pulldown_footer_loading=0x7f090019;
-        public static final int pulldown_footer_text=0x7f090018;
-        public static final int pulldown_header_arrow=0x7f09001a;
-        public static final int pulldown_header_date=0x7f09001c;
-        public static final int pulldown_header_loading=0x7f09001d;
-        public static final int pulldown_header_text=0x7f09001b;
-        public static final int tab_imageView=0x7f09001e;
-        public static final int tab_textView=0x7f09001f;
-        public static final int text=0x7f090000;
-        public static final int thumbnail=0x7f090001;
-        public static final int titleRightButton=0x7f090013;
-        public static final int titleText=0x7f090014;
+        public static final int MorePageTableLayout_Favorite=0x7f0a0009;
+        public static final int MorePageTableLayout_Follow=0x7f0a000b;
+        public static final int buy_header=0x7f0a0011;
+        public static final int car_header=0x7f0a0018;
+        public static final int category_header=0x7f0a0016;
+        public static final int cope=0x7f0a0022;
+        public static final int delete=0x7f0a0023;
+        public static final int empty_cart_view=0x7f0a0007;
+        public static final int first_listView=0x7f0a0010;
+        public static final int home_header=0x7f0a000f;
+        public static final int imageView1=0x7f0a0003;
+        public static final int imageView2=0x7f0a0005;
+        public static final int item_image=0x7f0a0002;
+        public static final int item_name=0x7f0a0004;
+        public static final int linew=0x7f0a0006;
+        public static final int listView1=0x7f0a0012;
+        public static final int more_header=0x7f0a0008;
+        public static final int more_page_row0=0x7f0a000a;
+        public static final int more_page_row1=0x7f0a000c;
+        public static final int more_page_row2=0x7f0a000d;
+        public static final int more_page_row3=0x7f0a000e;
+        public static final int myCheckBox=0x7f0a0019;
+        public static final int progressImage=0x7f0a0013;
+        public static final int pullDownView1=0x7f0a0017;
+        public static final int pulldown_footer_loading=0x7f0a001b;
+        public static final int pulldown_footer_text=0x7f0a001a;
+        public static final int pulldown_header_arrow=0x7f0a001c;
+        public static final int pulldown_header_date=0x7f0a001e;
+        public static final int pulldown_header_loading=0x7f0a001f;
+        public static final int pulldown_header_text=0x7f0a001d;
+        public static final int tab_imageView=0x7f0a0020;
+        public static final int tab_textView=0x7f0a0021;
+        public static final int text=0x7f0a0000;
+        public static final int thumbnail=0x7f0a0001;
+        public static final int titleRightButton=0x7f0a0014;
+        public static final int titleText=0x7f0a0015;
     }
     public static final class layout {
         public static final int item_list=0x7f030000;
@@ -116,6 +136,10 @@ public final class R {
         public static final int pulldown_header=0x7f03000a;
         public static final int tab_wighet=0x7f03000b;
     }
+    public static final class menu {
+        public static final int contextmenu=0x7f090000;
+        public static final int menu=0x7f090001;
+    }
     public static final class string {
         public static final int action=0x7f070007;
         public static final int answers=0x7f070006;
@@ -124,6 +148,8 @@ public final class R {
         public static final int app_menu_surelogout=0x7f07000a;
         public static final int app_name=0x7f070000;
         public static final int cancle=0x7f07000c;
+        public static final int cope=0x7f07000e;
+        public static final int delete=0x7f07000f;
         public static final int hello_world=0x7f070001;
         public static final int imageName=0x7f070002;
         public static final int menu_settings=0x7f070003;
@@ -134,8 +160,43 @@ public final class R {
         public static final int news=0x7f070005;
         public static final int sure=0x7f07000b;
         public static final int title_activity_main=0x7f070004;
+        /** contextmenu title
+         */
+        public static final int titlename=0x7f07000d;
     }
     public static final class style {
         public static final int AppTheme=0x7f080000;
     }
+    public static final class styleable {
+        /** 自定义checkbox的属性
+属性名称和值
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #Mycheckbox_value com.mytabhost.ui:value}</code></td><td>控件名称</td></tr>
+           </table>
+           @see #Mycheckbox_value
+         */
+        public static final int[] Mycheckbox = {
+            0x7f010000
+        };
+        /**
+          <p>
+          @attr description
+          控件名称
+
+
+          <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android:value
+        */
+        public static final int Mycheckbox_value = 0;
+    };
 }

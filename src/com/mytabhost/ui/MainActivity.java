@@ -147,15 +147,6 @@ public class MainActivity extends TabActivity implements OnTouchListener,
 		return super.dispatchKeyEvent(event);
 	}
 
-	@Override 
-	public boolean dispatchTouchEvent(MotionEvent event) { 
 
-	if(mGestureDetector.onTouchEvent(event)){ 
-	event.setAction(MotionEvent.ACTION_CANCEL); 
-	} 
-
-	return super.dispatchTouchEvent(event); 
-
-	} 
 	
 }

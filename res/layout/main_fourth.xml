@@ -8,4 +8,13 @@
  <include layout="@layout/main_header"
     android:id="@+id/buy_header" />
 
+ <ListView
+     android:id="@+id/listView1"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_alignParentLeft="true"
+     android:cacheColorHint="#00000000"
+     android:layout_below="@+id/buy_header" >
+ </ListView>
+
 </RelativeLayout>
