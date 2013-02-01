@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--自定义checkbox的属性-->
+   <declare-styleable name="Mycheckbox"> <!--控件名称-->
+       <attr name="value" format="string"/> <!--属性名称和值-->
+   </declare-styleable>
+</resources>
