@@ -106,7 +106,7 @@ public class MainActivity extends TabActivity implements OnTouchListener,
 			Toast.makeText(this, "向右手势", Toast.LENGTH_SHORT).show();
 			tabHost.setCurrentTab(index);
 		}
-		
+
 		return false;
 	}
 
@@ -147,6 +147,17 @@ public class MainActivity extends TabActivity implements OnTouchListener,
 		return super.dispatchKeyEvent(event);
 	}
 
+	/**
+	 * listview 和水平滑动事件冲突
+	 */
+	@Override
+	public boolean dispatchTouchEvent(MotionEvent event) {
+		// TODO Auto-generated method stub
+		if (mGestureDetector.onTouchEvent(event)) {
+			event.setAction(MotionEvent.ACTION_CANCEL);
+		}
 
-	
+		return super.dispatchTouchEvent(event);
+	}
+
 }

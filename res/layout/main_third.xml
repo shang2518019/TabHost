@@ -3,19 +3,59 @@
     xmlns:jion="http://schemas.android.com/apk/res/com.mytabhost.ui"
     android:id="@+id/empty_cart_view"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent" 
-    android:background="#ffefebe7">
-   <include layout="@layout/main_header"
-       android:id="@+id/car_header"/>
+    android:layout_height="fill_parent"
+    android:background="#ffefebe7" >
 
-   <com.mytabhost.ui.MyCheckBox
-       android:id="@+id/myCheckBox"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:layout_below="@+id/car_header"
-       android:layout_centerHorizontal="true"
-       android:layout_marginTop="25dp"
-       android:button="@drawable/chechbox_selector"
-       jion:value="12"
-       android:text="请点击我" />
+    <include
+        android:id="@+id/car_header"
+        layout="@layout/main_header" />
+
+    <com.mytabhost.ui.MyCheckBox
+        android:id="@+id/myCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/car_header"
+        android:layout_centerHorizontal="true"
+        android:button="@drawable/chechbox_selector"
+        android:text="请点击我"
+        jion:value="12" />
+
+    <EditText
+        android:id="@+id/search_products_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/car_header"
+        android:hint="Search products" >
+
+        <requestFocus />
+    </EditText>
+
+    <ListView
+        android:id="@+id/over_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/search_products_editText" >
+    </ListView>
+
+    <com.mytabhost.widget.MySideBar
+        android:id="@+id/mySideBar1"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/search_products_editText" />
+
+    <TextView
+        android:id="@+id/over_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/myCheckBox"
+        android:visibility="gone"
+        android:typeface="monospace" />
+
 </RelativeLayout>
